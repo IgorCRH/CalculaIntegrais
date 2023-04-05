@@ -1,0 +1,51 @@
+<html lang="en" >
+<body background="planodefundo.jpg">
+
+<style>
+body {
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+font-family: Century Gothic;
+}
+
+</style>
+
+<head>
+<form align="top" id="form"> 
+<input type="search" id="query" name="q" placeholder="Search...">
+<button>Pesquise</button>
+</form>
+
+<div class= "imagem">
+<img src="cabecalho.png">
+</div>
+
+</head>
+
+<h1  style="color: rgb(255,255,255);">Calculadora de Integrais Definidas pelo método TFC</h1>
+<p style="color: rgb(255,255,255);">Entre com a função a ser integrada:</p>
+<input type="text" id="funcao" value="x^2">
+<p style="color: rgb(255,255,255);">Entre com o limite inferior de integração:</p>
+<input type="text" id="limite-inferior" value="1">
+<p style="color: rgb(255,255,255);">Entre com o limite superior de integração:</p>
+<input type="text" id="limite-superior" value="2">
+<p style="color: rgb(255,255,255);">Entre com o número de subintervalos:</p>
+<input type="text" id="num-subintervalos" value="100">
+<br><br>
+<button onclick="calcularIntegral()">Calcular Integral</button>
+<p id="resultado"></p>
+
+
+<h1 style="color: rgb(255,255,255);">Calculadora de Integrais Indefinidas pelo método TFC</h1>
+<button onclick="calcularIntegralInd()">Calcular Integral Desejada</button>
+<p id="resultadoind"></p>
+
+
+<script src="tfc.js"></script>
+<script src="nerdamer.core.js"></script>
+<script src="Algebra.js"></script>
+<script src="Calculus.js"></script>
+<script src="tfc2.js"></script> 
+</body>
+</html>

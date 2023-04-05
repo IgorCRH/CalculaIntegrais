@@ -1,0 +1,45 @@
+<html lang="en" >
+<body background="planodefundo.jpg">
+
+<style>
+body {
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+font-family: Century Gothic;
+}
+
+</style>
+
+<head>
+<form align="top" id="form"> 
+<input type="search" id="query" name="q" placeholder="Search...">
+<button>Pesquise</button>
+</form>
+
+<div class= "imagem">
+<img src="cabecalho.png">
+</div>
+
+</head>
+
+<h1  style="color: rgb(255,255,255);">Calculadora de Integrais Indefinidas de Função Composta com Trigonométricas</h1>
+<p style="color: rgb(255,255,255);">OBS: Apenas integrais de funções seno,cosseno e tangente. Digite 'sin' para seno.</p>
+<p style="color: rgb(255,255,255);">Entre com a função a ser integrada:</p>
+<input type="text" id="funcao" value="cos(x+1)">
+<p style="color: rgb(255,255,255);">Entre com o limite superior:</p>
+<input type="text" id="limite-superior" value="1">
+<p style="color: rgb(255,255,255);">Entre com o limite inferior:</p>
+<input type="text" id="limite-inferior" value="0">
+<p style="color: rgb(255,255,255);">Entre com o número de subintervalos:</p>
+<input type="text" id="num-subintervalos" value="1">
+<button onclick="calcularIntegralTrig()">Calcular Integral Desejada</button>
+<p id="resultado"></p>
+
+
+<script src="trigonometricas.js"></script>
+<script src="nerdamer.core.js"></script>
+<script src="Algebra.js"></script>
+<script src="Calculus.js"></script> 
+</body>
+</html>
